@@ -13,6 +13,29 @@
 <script src="css-js/jquery.ba-dotimeout.js"></script> 
 <script src="css-js/jquery.dst.js"></script>     
 
+
+   <style type=text/css>
+
+    div[data-role=navbar] .ui-btn .ui-btn-inner { 
+      padding-top: 50px; 
+    }
+
+    div[data-role=navbar] .ui-btn .ui-icon { 
+      width: 40px; 
+      height: 40px; 
+      margin-left: -20px; 
+    }
+
+    #home .ui-icon { 
+      background:  url(img/dashboard_icon.png) 50% 50% no-repeat; 
+    }
+
+    #settings .ui-icon { 
+      background:  url(img/settings_icon.png) 50% 50% no-repeat;  
+    }
+
+  </style>
+
 </head> 
 <body> 
 
@@ -21,9 +44,15 @@
 
     <div id="newEventFormPage">
         <div id="newEventFormHead" data-role="header">
-            <h1 align="left">fanatic</h1>
-            <img src="img/dashboard_icon.png" />
-            <img src="img/settings_icon.png" />
+     <div data-role=navbar>
+      <ul>
+      <h1>fanatic</h1>
+        <!-- <li><a href=# id=home data-icon=custom>Dashboard</a></li> -->
+        <li><a href=# id=settings data-icon=custom>Settings</a></li>
+      </ul>
+
+    </div>
+
         </div>
         
         <div id="newEventFormContent" data-role="content">
