@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/new_event_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:src="@drawable/new_event_icon" />
+
+    <TextView
+        android:id="@+id/new_eventLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/new_event_icon"
+        android:text="Create New Event"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View
+        android:id="@+id/new_event_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/new_event_icon"
+        android:background="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/compose_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/new_event_divider"
+        android:src="@drawable/compose_icon" />
+
+    <View
+        android:id="@+id/compose_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/compose_icon"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/composeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/compose_icon"
+        android:layout_alignLeft="@+id/new_eventLabel"
+        android:layout_marginBottom="17dp"
+        android:text="Compose"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/scan_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/compose_divider"
+        android:src="@drawable/scan_icon" />
+
+    <View
+        android:id="@+id/scan_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/scan_icon"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/scanLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/scan_icon"
+        android:layout_alignLeft="@+id/new_eventLabel"
+        android:layout_marginBottom="17dp"
+        android:text="Scan A Fan"
+        android:textAppearance="?android:attr/textAppearanceLarge" />  
+        
+    <ImageView
+        android:id="@+id/fans_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/scan_divider"
+        android:src="@drawable/fans_icon" />
+
+    <View
+        android:id="@+id/fans_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fans_icon"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/fansLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fans_icon"
+        android:layout_alignLeft="@+id/new_eventLabel"
+        android:layout_marginBottom="17dp"
+        android:text="Fans And Groups"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/rewards_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/fans_divider"
+        android:src="@drawable/rewards_icon" />
+
+    <View
+        android:id="@+id/rewards_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rewards_icon"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/rewardsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rewards_icon"
+        android:layout_alignLeft="@+id/new_eventLabel"
+        android:layout_marginBottom="17dp"
+        android:text="Rewards"
+        android:textAppearance="?android:attr/textAppearanceLarge" />    
+
+    <ImageView
+        android:id="@+id/signin_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/rewards_divider"
+        android:src="@drawable/signin_icon" />
+
+    <View
+        android:id="@+id/signin_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/signin_icon"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/signinLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/signin_icon"
+        android:layout_alignLeft="@+id/new_eventLabel"
+        android:layout_marginBottom="17dp"
+        android:text="Fan Sign-In"
+        android:textAppearance="?android:attr/textAppearanceLarge" />    
+        
+    <ImageView
+        android:id="@+id/analytics_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/signin_divider"
+        android:src="@drawable/analytics_icon" />
+
+    <View
+        android:id="@+id/analytics_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/analytics_icon"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/analyticsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/analytics_icon"
+        android:layout_alignLeft="@+id/new_eventLabel"
+        android:layout_marginBottom="17dp"
+        android:text="Analytics"
+        android:textAppearance="?android:attr/textAppearanceLarge" />        
+</RelativeLayout>
